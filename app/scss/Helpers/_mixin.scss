@@ -1,0 +1,9 @@
+@mixin div-box-shadow {
+  -moz-box-shadow: 0px 2px 5px 1px #656565;
+  -webkit-box-shadow: 0px 2px 5px 1px #656565;
+  -o-box-shadow: 0px 2px 5px 1px #656565;
+  box-shadow: 0px 2px 5px 1px #656565;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}

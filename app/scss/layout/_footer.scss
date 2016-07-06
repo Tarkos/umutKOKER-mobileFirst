@@ -1,0 +1,25 @@
+//SCSS
+// _footer.scss
+footer {
+  background: $black;
+  color: $white;
+  border-top: 2px solid $yellow;
+  font-family: $paragraphe-font;
+  width: 100%;
+  font-size: .8em;
+  float: left;
+  margin-top: 2em;
+  height: 10%;
+  .content--footer {
+    margin-top: 1em;
+    width: 100%;
+    text-align: center;
+    a {
+      color: white;
+      margin: 3%;
+      &:hover{
+        border-bottom: 1px solid $yellow;
+      }
+    }
+  }
+}

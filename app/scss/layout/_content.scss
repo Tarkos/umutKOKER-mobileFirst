@@ -1,0 +1,127 @@
+//SCSS
+// _content.scss
+
+html{
+  width:$max-width;
+  height:100%;
+  box-sizing: border-box;
+}
+body{
+  font-color: $black;
+  height:100%;
+}
+
+h2{
+  margin: 0px 0 8px 0;
+}
+
+h3{
+  margin-bottom: 0;
+}
+a{
+  color: $black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: $titre-font;
+}
+
+p{
+  font-family: $paragraphe-font;
+  font-size: 1em;
+}
+
+
+.section1{
+  margin-top: 2%;
+  border-top: 3px solid $red;
+  border-bottom: 3px solid $yellow;
+  width:100%;
+  height: 40%;
+  background: url("../../images/mannschaft.jpg") 50% 35%;
+  background-size: cover;
+}
+.center{
+  height: 100%;
+  h1{
+    color: $white;
+    text-shadow: 3px 3px $black;
+    padding-top:10%;
+    font-family : $titre-font, Verdana, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3em;
+  }
+  p{
+    font-size:1em;
+    color: $white;
+    font-weight: 800;
+    text-align: center;
+  }
+}
+  .container {
+    width: 100%;
+    height: 100%;
+
+    .sectionarticle {
+      margin-top: 5%;
+      width: $max-width;
+      height: 30%;
+      float: left;
+      img {
+        width: 100%;
+        border-radius: 3%;
+      }
+      h2{
+        font-family: $titre-article;
+        text-transform: uppercase;
+      }
+      p {
+        margin-top: 0px;
+      }
+    }
+  }
+
+@media only screen and (min-width: 600px){
+
+  body{
+    margin: 0 auto;
+  }
+
+  .section1{
+    height: 30%;
+  }
+  .center {
+    text-align: center;
+    margin:0;
+    padding: 0%;
+    h1 {
+      padding-top: 6%;
+      margin:0 auto;
+    }
+
+  }
+  .container{
+    margin: 0 auto;
+    height: 100%;
+    width:80%;
+  }
+
+  .article {
+    width: 100%;
+    .sectionarticle {
+      width: 28%;
+      margin-left: 3%;
+      padding: 1em;
+      &:hover {
+      @include div-box-shadow;
+      }
+      &:first-child, &:nth-child(4){
+        margin-left:0;
+      }
+
+    }
+  }
+
+
+}
+
