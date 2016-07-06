@@ -1,4 +1,4 @@
-C'est un blog dédié à l'équipe de football d'allemagne 
+C'est un blog dédié à l'équipe national Allemande de football 
 
 #Install de npm 
 
